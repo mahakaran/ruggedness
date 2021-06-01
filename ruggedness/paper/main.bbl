@@ -1,0 +1,292 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Szendro2013}{article}{}
+      \name{author}{5}{}{%
+        {{hash=708a363ff1ac22fccc1366510c60c645}{%
+           family={Szendro},
+           familyi={S\bibinitperiod},
+           given={Ivan\bibnamedelima G},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=3ea73f4b3c97272ecc6e0e191025fe2f}{%
+           family={Schenk},
+           familyi={S\bibinitperiod},
+           given={Martijn\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=7a022bb5d8b05e081e7ca3aae225dd81}{%
+           family={Franke},
+           familyi={F\bibinitperiod},
+           given={Jasper},
+           giveni={J\bibinitperiod}}}%
+        {{hash=4d4104ab4a5c562d44ef44ae19819281}{%
+           family={Krug},
+           familyi={K\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0b1969cfe671a60c9ea9f78c8e27778e}{%
+           family={Visser},
+           familyi={V\bibinitperiod},
+           given={J\bibnamedelima Arjan\bibnamedelimb G\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim M\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{IOP} Publishing}%
+      }
+      \strng{namehash}{4f6440bd4421afed8a93e0c41ac8e824}
+      \strng{fullhash}{5d6780e0719954a85d1319e01e207055}
+      \strng{bibnamehash}{4f6440bd4421afed8a93e0c41ac8e824}
+      \strng{authorbibnamehash}{4f6440bd4421afed8a93e0c41ac8e824}
+      \strng{authornamehash}{4f6440bd4421afed8a93e0c41ac8e824}
+      \strng{authorfullhash}{5d6780e0719954a85d1319e01e207055}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Mechanics: Theory and Experiment}
+      \field{month}{1}
+      \field{number}{01}
+      \field{title}{Quantitative analyses of empirical fitness landscapes}
+      \field{volume}{2013}
+      \field{year}{2013}
+      \field{pages}{P01005}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1742-5468/2013/01/p01005
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1742-5468/2013/01/p01005
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1742-5468/2013/01/p01005
+      \endverb
+    \endentry
+    \entry{Kauffman1993}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a447063ee328386c8ceba6c257ab6bc9}{%
+           family={Kauffman},
+           familyi={K\bibinitperiod},
+           given={Stuart\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{a447063ee328386c8ceba6c257ab6bc9}
+      \strng{fullhash}{a447063ee328386c8ceba6c257ab6bc9}
+      \strng{bibnamehash}{a447063ee328386c8ceba6c257ab6bc9}
+      \strng{authorbibnamehash}{a447063ee328386c8ceba6c257ab6bc9}
+      \strng{authornamehash}{a447063ee328386c8ceba6c257ab6bc9}
+      \strng{authorfullhash}{a447063ee328386c8ceba6c257ab6bc9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Origins of Order: Self Organization and Selection in Evolution}
+      \field{year}{1993}
+    \endentry
+    \entry{Neidhart2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=22a03a2917f39e61fc9557a8b73d9fe3}{%
+           family={Neidhart},
+           familyi={N\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=708a363ff1ac22fccc1366510c60c645}{%
+           family={Szendro},
+           familyi={S\bibinitperiod},
+           given={Ivan\bibnamedelima G},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4d4104ab4a5c562d44ef44ae19819281}{%
+           family={Krug},
+           familyi={K\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press ({OUP})}%
+      }
+      \strng{namehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{fullhash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{bibnamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authorbibnamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authornamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authorfullhash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \field{extraname}{1}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Genetics}
+      \field{month}{8}
+      \field{number}{2}
+      \field{title}{Adaptation in Tunably Rugged Fitness Landscapes: The Rough Mount Fuji Model}
+      \field{volume}{198}
+      \field{year}{2014}
+      \field{pages}{699\bibrangedash 721}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1534/genetics.114.167668
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1534/genetics.114.167668
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1534/genetics.114.167668
+      \endverb
+    \endentry
+    \entry{Neidhart2013}{article}{}
+      \name{author}{3}{}{%
+        {{hash=22a03a2917f39e61fc9557a8b73d9fe3}{%
+           family={Neidhart},
+           familyi={N\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=708a363ff1ac22fccc1366510c60c645}{%
+           family={Szendro},
+           familyi={S\bibinitperiod},
+           given={Ivan\bibnamedelima G.},
+           giveni={I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=4d4104ab4a5c562d44ef44ae19819281}{%
+           family={Krug},
+           familyi={K\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{fullhash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{bibnamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authorbibnamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authornamehash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \strng{authorfullhash}{997aa9a4f2cab13b6996c6d2ca36fb6b}
+      \field{extraname}{2}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{month}{9}
+      \field{title}{Exact results for amplitude spectra of fitness landscapes}
+      \field{volume}{332}
+      \field{year}{2013}
+      \field{pages}{218\bibrangedash 227}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.jtbi.2013.05.002
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jtbi.2013.05.002
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jtbi.2013.05.002
+      \endverb
+    \endentry
+    \entry{Kauffman1987}{article}{}
+      \name{author}{2}{}{%
+        {{hash=92969e9fd71fe821f1e25561028ca907}{%
+           family={Kauffman},
+           familyi={K\bibinitperiod},
+           given={Stuart},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0b150c66b7499a99c6aeb2cbc3229b66}{%
+           family={Levin},
+           familyi={L\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \strng{fullhash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \strng{bibnamehash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \strng{authorbibnamehash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \strng{authornamehash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \strng{authorfullhash}{5fcbf5a3ca7a0f321205b22cbe0fb89e}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{month}{9}
+      \field{number}{1}
+      \field{title}{Towards a general theory of adaptive walks on rugged landscapes}
+      \field{volume}{128}
+      \field{year}{1987}
+      \field{pages}{11\bibrangedash 45}
+      \range{pages}{35}
+      \verb{doi}
+      \verb 10.1016/s0022-5193(87)80029-2
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/s0022-5193(87)80029-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/s0022-5193(87)80029-2
+      \endverb
+    \endentry
+    \entry{Rosenberg2005}{article}{}
+      \name{author}{1}{}{%
+        {{hash=571f02b2dc262eab24acf21dab487a24}{%
+           family={Rosenberg},
+           familyi={R\bibinitperiod},
+           given={Noah\bibnamedelima A.},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier {BV}}%
+      }
+      \strng{namehash}{571f02b2dc262eab24acf21dab487a24}
+      \strng{fullhash}{571f02b2dc262eab24acf21dab487a24}
+      \strng{bibnamehash}{571f02b2dc262eab24acf21dab487a24}
+      \strng{authorbibnamehash}{571f02b2dc262eab24acf21dab487a24}
+      \strng{authornamehash}{571f02b2dc262eab24acf21dab487a24}
+      \strng{authorfullhash}{571f02b2dc262eab24acf21dab487a24}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Theoretical Biology}
+      \field{month}{11}
+      \field{number}{1}
+      \field{title}{A sharp minimum on the mean number of steps taken in adaptive walks}
+      \field{volume}{237}
+      \field{year}{2005}
+      \field{pages}{17\bibrangedash 22}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.jtbi.2005.03.026
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1016/j.jtbi.2005.03.026
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1016/j.jtbi.2005.03.026
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

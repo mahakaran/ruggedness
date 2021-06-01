@@ -1,0 +1,220 @@
+\documentclass[10pt, reqno]{amsart}
+\setlength{\parindent}{0pt}
+\usepackage{amscd}
+\usepackage{verbatim,ifthen}
+%\usepackage{libertine}
+\usepackage{scalerel,amssymb}
+
+
+
+
+\usepackage{color}
+\usepackage{latexsym}
+\usepackage{tikz}
+\usepackage{tikz-cd}
+\usepackage{mathrsfs}
+\usepackage{wrapfig}
+\usetikzlibrary{shapes}
+\usepackage{color}
+\usetikzlibrary{arrows.meta}
+\usepackage{bbm}
+\usetikzlibrary{matrix}
+\usetikzlibrary{calc}
+\usetikzlibrary{arrows,intersections}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\def\heading#1{\centerline{\bf #1 }\vskip 11pt}
+\newcommand\nextpage{\vfill\eject}
+\usepackage[colorlinks, linkcolor=blue, citecolor=magenta, linktocpage]{hyperref}
+\addtolength{\textwidth}{80pt}
+\addtolength{\hoffset}{-40pt}
+\renewcommand{\baselinestretch}{1.2}
+
+\addtocontents{toc}{\setcounter{tocdepth}{1}}
+
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}% reset theorem numbering for each chapter
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example}
+
+
+\let\oldtocsection=\tocsection
+ 
+\let\oldtocsubsection=\tocsubsection
+ 
+\let\oldtocsubsubsection=\tocsubsubsection
+ 
+\renewcommand{\tocsection}[2]{\hspace{0em}\oldtocsection{#1}{#2}}
+\renewcommand{\tocsubsection}[2]{\hspace{1em}\oldtocsubsection{#1}{#2}}
+\renewcommand{\tocsubsubsection}[2]{\hspace{2em}\oldtocsubsubsection{#1}{#2}}
+
+
+
+
+
+\def\msquare{\mathord{\scalebox{0.35}[0.35]{\scalerel*{\Box}{\strut}}}}
+
+\def\Xint#1{\mathchoice
+{\XXint\displaystyle\textstyle{#1}}%
+{\XXint\textstyle\scriptstyle{#1}}%
+{\XXint\scriptstyle\scriptscriptstyle{#1}}%
+{\XXint\scriptscriptstyle\scriptscriptstyle{#1}}%
+\!\int}
+\def\XXint#1#2#3{{\setbox0=\hbox{$#1{#2#3}{\int}$ }
+\vcenter{\hbox{$#2#3$ }}\kern-.6\wd0}}
+\def\ddashint{\Xint=}
+\def\dashint{\Xint-}
+\usepackage{eucal}
+\usepackage{calc}  
+\usepackage{enumitem} 
+\usepackage{tensor}
+\usepackage[]{algorithm2e}
+
+\usepackage{graphicx,wrapfig,lipsum}
+\usepackage{etoolbox}
+\usepackage{marginnote}
+\usepackage{lipsum}
+\makeatletter
+\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+\patchcmd{\@mn@margintest}{\@tempswafalse}{\@tempswatrue}{}{}
+\reversemarginpar 
+\makeatother
+\usepackage{scrextend}
+
+\makeatletter
+\DeclareRobustCommand\widecheck[1]{{\mathpalette\@widecheck{#1}}}
+\def\@widecheck#1#2{%
+    \setbox\z@\hbox{\m@th$#1#2$}%
+    \setbox\tw@\hbox{\m@th$#1%
+       \widehat{%
+          \vrule\@width\z@\@height\ht\z@
+          \vrule\@height\z@\@width\wd\z@}$}%
+    \dp\tw@-\ht\z@
+    \@tempdima\ht\z@ \advance\@tempdima2\ht\tw@ \divide\@tempdima\thr@@
+    \setbox\tw@\hbox{%
+       \raise\@tempdima\hbox{\scalebox{1}[-1]{\lower\@tempdima\box
+\tw@}}}%
+    {\ooalign{\box\tw@ \cr \box\z@}}}
+\makeatother
+
+
+
+\title{Maximum Number of Local Maxima on Hamming Graph}
+\author{Mahakaran Sandhu -- RSC, ANU}
+
+\begin{document}
+
+\maketitle
+
+
+Let us begin with a few key definitions. For a graph $G$, we denote by $V(G)$ the vertex set, and by $q$ the cardinality of the vertex set. \\
+
+\textbf{Definition 1.1.} (Complete graph). A graph $G$ is said to be complete if each pair of vertices in $V(G)$ are connected by exactly one edge. \\
+
+\textbf{Definition 1.2.} (Distance metric). Define the distance $d$ between two vertices $d(v_i, v_j), v_i, v_j \in V(G)$ as the smallest number of edges between $v_i$ and $v_j$. \\
+
+\textbf{Definition 1.3.} (Local maximum.) Let $G$ be a graph and let $F: V(G) \to \mathbb{R}$ be some function. A vertex $v_0 \in V(G)$ is said to be a local maximum for $f$ if, 
+
+$$f(v_0) > f(v) \text{ for all } v \in \mathbb{M}_1$$
+
+where $\mathbb{M}_1 := \{v \in V(G): d(v_0, v)=1\}$. \\
+
+\textbf{Proposition 1.4.} (Number of local maxima in a complete graph).\textit{Let $G$ be a complete graph. The number of local maxima for a function $f: V(G) \to \mathbb{R}$ is at most one. }
+
+\begin{proof} Immediate from Definition 1.1. -- 1.3. We provide a proof by contradiction below for the interested reader as follows. Suppose $G$ has 2 maxima, $v_0, v_1$. From Definition 1.1 and 1.2, $d(v_i,v_j) = 1 \; \text{ for all } v_i, v_j \in V(K)$; this implies $d(v_0, v_1)=1$. This is a contradiction of Definition 1.3; a complete graph cannot have more than one local maximum. 
+\end{proof}
+
+
+
+\textbf{Definition 1.5.} (Cartesian product of graphs). The Cartesian product of graphs $G$ and $H$, $G \msquare H$, is the Cartesian product of the vertex sets of $G$ and $H$: 
+$$G \msquare H = (V(G) \times V(H), E (G \times H)) $$
+
+where two vertices $(g,h)$ and $(g',h')$ are adjacent if and only if either: 
+\begin{enumerate}
+\item $g = g'$ and $h$ is adjacent to $h'$ in $H$; or
+\item $h=h'$ and $g$ is adjacent to $g'$ in G.
+\end{enumerate}
+
+\textbf{Definition 1.6.} (Hamming graph). The Hamming graph $H(L, q)$ is the $L$-fold Cartesian product of the complete graph $G$ with vertex set cardinality $q$.\\
+
+\clearpage
+
+
+
+\textbf{Proposition 1.7.} (Number of edges in a Cartesian product of graphs). \textit{Let $G$ and $H$ be graphs, and $G \msquare H$ their Cartesian product. Then, }
+
+$$|E(G \msquare H)| = |E(G)|\cdot |V(H)| + |E(H)|\cdot |V(G)|$$
+
+\begin{proof}
+
+The cardinality of a set $S$ that is the Cartesian product of two sets $A, B$ is the product of the cardinalities of $A$ and $B$, $|S| = |A|\cdot|B|$. It follows that $|V(G \msquare H)| = |V(G)|\cdot |V(H)|$. Insert good proof here. 
+\end{proof}
+
+
+\textbf{Proposition 1.8.} (Number of local maxima in a Cartesian product of complete graphs.) \textit{Let $G$ and $H$ be complete graphs, and $G \msquare H$ their Cartesian product. The number of local maxima for a function $f: V(G \msquare H) \to \mathbb{R}$ is at most $|V(G)|$ if $|V(G)| < |V(H)|$ or $|V(H)|$ if $|V(G)| > |V(H)|$.}
+
+\begin{proof}
+By Fiending. 
+\end{proof}
+
+
+
+
+\textbf{Theorem A.} \textit{Let H(L,q) be a Hamming graph. The number of local maxima for a function $f:V(H) \to \mathbb{R}$ is at most ---.}
+
+\begin{proof}
+By fiending.
+\end{proof}
+
+
+\clearpage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection*{Definition 1. (Complete graph)} A graph $K(q)$ is complete if each pair of vertices $v,u \in V(K)$ are connected by an edge. Here, $q$ is the cardinality of the vertex set, i.e. $q = |V(K)|$. We note that a complete graph has ${q \choose 2}$ edges (proof not provided). 
+
+\subsection*{Definition 2. (Cartesian product of graphs)} The Cartesian product of graphs $G$ and $H$, $G \msquare H$, is the Cartesian product of the vertex sets of $G$ and $H$: 
+$$G \msquare H = (V(G) \times V(H), E (G \times H)) $$
+
+where 2 vertices $(g,h)$ and $(g',h')$ are adjacent if and only if either: 
+\begin{enumerate}
+\item $g = g'$ and $h$ is adjacent to $h'$ in $H$; or
+\item $h=h'$ and $g$ is adjacent to $g'$ in G.
+\end{enumerate}
+
+
+
+\subsection*{Definition 3. (Hamming Graph)} The Hamming graph $H(L, q)$ is the $L$-fold Cartesian product of the complete graph $K(q)$. 
+
+\subsection*{Definition 4. (Graph function)} A graph function on a graph $G(V,E)$ is a function $f: V \rightarrow \mathbb{R}$ from the vertices to the real numbers.  
+
+
+\subsection*{Definition 5. (Maximum vertex)} A vertex $V_0$ is a maximum if and only if $V_0$ has the maximum value of $f$ among its 1 unit distance neighbours $\mathcal{V}_1$, where $\mathcal{V}_1 = \{d(V_0, V_i)=1 \; \forall V_i \in V(G)\}$. 
+
+\subsection*{Proposition 1.} \textit{The complete graph $K(q)$ can have a maximum of 1 maximum node.}
+
+\begin{proof} (By induction). By Definition 1, $d(v,u) = 1 \; \forall v, u \in V(K)$. In conjunction with Definition 5, it follows by induction that since all vertices in $K(q)$ have distance 1, there can only be a maximum of 1 maximum. \\
+
+(By contradiction.) Suppose $K(q)$ has 2 maxima, $v_0, v_1$. By Definition 1, $d(v,u) = 1 \; \forall v, u \in V(K)$; this implies $d(v_0, v_1)=1$. This is a contradiction of Definition 5. 
+\end{proof}
+
+
+
+
+\end{document}
